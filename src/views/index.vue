@@ -13,8 +13,8 @@
       <div class="side side-bg">
         <img class="image" src="/img/clouds.jpg" alt="" />
       </div>
-      <div class="popup" v-if="error.length > 0">
-        <div class="popup__wrapp" @click.self="error = []">
+      <div class="popup" v-if="error.length > 0" @click.self="error = []">
+        <div class="popup__wrapp">
           <span>{{ error[0] }}</span>
           <button class="button" @click="error = []">закрыть</button>
         </div>
