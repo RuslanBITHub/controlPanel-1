@@ -54,9 +54,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.input-wrapp {
-  .text {
-    z-index: 10;
-  }
-}
 </style>

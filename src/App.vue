@@ -8,6 +8,10 @@
 </template>
 
 <style lang="scss">
+@font-face {
+  font-family: "Mont";
+  src: url("/fonts/Mont-Regular.ttf");
+}
 :root {
   --main-color: #4079fa;
   --second-color: #e50f81;
@@ -166,10 +170,10 @@ body {
 /////////////////////////////////////////////////////////
 // main and second fonts
 .mf {
-  font-family: "Roboto", sans-serif;
+  font-family: "Mont", sans-serif;
 }
 .sf {
-  font-family: "Istok Web", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /////////////////////////////////////////////////////////
 // settings
