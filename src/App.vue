@@ -2,116 +2,194 @@
   <div class="content mf m">
     <!-- <router-link to="/">page</router-link> -->
     <main class="main">
-      <router-view/>
+      <router-view />
     </main>
   </div>
 </template>
 
 <style lang="scss">
 :root {
-  --main-color: #f9f9f9;
-  --second-color: #f9f9f9;
-  --third-color: #f9f9f9;
-  --bg-color: #ffffff;
-  --light-color: rgba(255, 255, 255, 0.90);
-  --dark-color: #000015;
+  --main-color: #4079fa;
+  --second-color: #e50f81;
+  --third-color: #4c4c4c;
+  --bg-color: #f5f5f5;
+  --light-color: rgba(255, 255, 255, 0.9);
+  --dark-color: #01000d;
 }
-*{padding: 0;margin: 0;border: 0; scroll-behavior: smooth;color: inherit;}
-*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active{outline: none;}
-a:focus,a:active,a{outline: none;color: inherit;}
-nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding:0;border:0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;object-fit: contain;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
-body{overflow-x: hidden;overflow-y: overlay;}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  scroll-behavior: smooth;
+  color: inherit;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active,
+a {
+  outline: none;
+  color: inherit;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+  object-fit: contain;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
 @media (min-width: 700px) {
-  ::-webkit-scrollbar{width:30px}
-  ::-webkit-scrollbar-track{border-radius:100px;background-clip:border-box}
-  ::-webkit-scrollbar-thumb{background:rgba(0,0,0,.2);background-clip:padding-box;border:13px solid transparent;border-radius:100px; transition: 1s;}
-  ::-webkit-scrollbar-button,::-webkit-scrollbar-track-piece{background:transparent}
-  ::-webkit-scrollbar-corner{background:transparent}
+  ::-webkit-scrollbar {
+    width: 30px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 100px;
+    background-clip: border-box;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+    border: 13px solid transparent;
+    border-radius: 100px;
+  }
+  ::-webkit-scrollbar-button,
+  ::-webkit-scrollbar-track-piece {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 }
 /////////////////////////////////////////////////////////
 // font sizes
-.s{
-  transition: 0.2s;
-  @media (min-width: 700px){
+.s {
+  @media (min-width: 700px) {
     font-size: 16px;
     line-height: 20px;
   }
-  @media (max-width: 700px){
+  @media (max-width: 700px) {
     font-size: 13.33px;
     line-height: 17.33px;
   }
 }
-.m{
-  transition: 0.2s;
-  @media (min-width: 700px){
+.m {
+  @media (min-width: 700px) {
     font-size: 23.04px;
     line-height: 27.04px;
   }
-  @media (max-width: 700px){
+  @media (max-width: 700px) {
     font-size: 19.2px;
     line-height: 23.2px;
   }
 }
-.l{
-  transition: 0.2s;
-  @media (min-width: 700px){
+.l {
+  @media (min-width: 700px) {
     font-size: 33.18px;
     line-height: 37.18px;
   }
-  @media (max-width: 700px){
+  @media (max-width: 700px) {
     font-size: 27.65px;
     line-height: 31.65px;
   }
 }
-.xl{
-  transition: 0.2s;
-  @media (min-width: 700px){
+.xl {
+  @media (min-width: 700px) {
     font-size: 47.77px;
     line-height: 51.77px;
   }
-  @media (max-width: 700px){
+  @media (max-width: 700px) {
     font-size: 39.81px;
     line-height: 43.81px;
   }
 }
 /////////////////////////////////////////////////////////
 // main and second fonts
-.mf{
-  font-family: 'Roboto', sans-serif;
+.mf {
+  font-family: "Roboto", sans-serif;
 }
-.sf{
-  font-family: 'Istok Web', sans-serif;
+.sf {
+  font-family: "Istok Web", sans-serif;
 }
 /////////////////////////////////////////////////////////
 // settings
-.link{
+.link {
   color: var(--main-color);
   transition: 0.2s;
-  &.nuxt-link-exact-active{
+  &.nuxt-link-exact-active {
     color: var(--dark-color);
   }
-  @media (min-width: 700px){
-    &:hover{
+  @media (min-width: 700px) {
+    &:hover {
       color: var(--second-color);
     }
   }
 }
-.main{
+.main {
   flex: 1 0 auto;
   min-height: 100vh;
 }
-.content{
+.content {
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -119,60 +197,64 @@ body{overflow-x: hidden;overflow-y: overlay;}
   background: var(--bg-color);
   overflow: hidden;
 }
-.page{
+.page {
   width: 100%;
   min-height: 100vh;
 }
-.padding{
-  transition: 0.04s;
-  @media (min-width: 700px){
+.padding {
+  @media (min-width: 700px) {
     padding: 0 72px 0 72px;
   }
-  @media (min-width: 1400px){
+  @media (min-width: 1400px) {
     padding: 0 144px 0 144px;
   }
-  @media (max-width: 700px){
+  @media (max-width: 700px) {
     padding: 0 24px 0 24px;
   }
 }
-.button{
+.button {
   height: 56px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--dark-color);
+  display: grid;
+  place-items: center;
+  background: var(--second-color);
   color: var(--light-color);
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 16px;
-  border: 1px solid rgba(0, 0, 0, 0);
-  @media (min-width: 700px){
-    &:hover{
+  width: 272px;
+  line-height: 16px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 24px;
+  @media (min-width: 700px) {
+    &:hover {
       transition: 0.2s;
-      background: var(--light-color);
-      color: var(--dark-color);
+      background: var(--main-color);
+      color: var(--light-color);
     }
   }
 }
-.input{
-  padding: 12px 24px;
-  background: rgba(0, 0, 0, 0);
-  border: 1px solid var(--dark-color);
-  border-radius: 4px;
-  font-size: 16px;
+.input {
+  padding: 0 24px;
   margin-bottom: 24px;
+  height: 56px;
+  background: white;
   color: var(--dark-color);
+  transition: 0.4s;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 272px;
+  line-height: 16px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
 }
-.input-wrapp{
+.input-wrapp {
   position: relative;
   margin-top: 40px;
-  .input{
-    padding: 18px;
-    width: 100%;
-    height: 56px;
+  width: 272px;
+  height: 56px;
+  .input {
     margin: 0px;
   }
-  .text{
+  .text {
     position: absolute;
     top: 50%;
     left: 18px;
@@ -182,11 +264,11 @@ body{overflow-x: hidden;overflow-y: overlay;}
     transform: translateY(-50%);
     height: 18px;
   }
-  .active{
+  .active {
     border: 2px solid var(--second-color);
   }
 }
-.password{
+.password {
   position: absolute;
   height: 32px;
   left: 18px;
@@ -197,7 +279,7 @@ body{overflow-x: hidden;overflow-y: overlay;}
   display: flex;
   align-items: center;
   pointer-events: none;
-  span{
+  span {
     display: block;
     height: 8px;
     width: 8px;
