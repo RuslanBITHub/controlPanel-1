@@ -4,7 +4,7 @@
     <navcomponent></navcomponent>
     <div class="page__wrapp">
       <div class="page__body">
-        <h1 class="l">Диск id: {{ this.$store.getters.getClientData.id }}</h1>
+        <h1 class="l">Клиент id: {{ this.$store.getters.getClientData.id }}</h1>
         <div class="nav__client">
           <router-link class="link" to="/client/info">info</router-link>
           <router-link class="link" to="/client/userssql"
@@ -23,10 +23,6 @@
         </div>
         <div class="text__wrapp">
           <p>text</p>
-        </div>
-        <div class="button__container">
-          <button class="button">Расширить диск</button>
-          <button class="button">Урезать диск</button>
         </div>
       </div>
     </div>
@@ -80,26 +76,6 @@ export default {
     padding: 0 48px;
     > * {
       padding: 12px;
-    }
-  }
-}
-.button__container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 48px;
-}
-.button {
-  background: var(--light-color);
-  color: var(--dark-color);
-  min-width: 100px;
-  width: auto;
-  padding: 0px 24px;
-  margin: 12px;
-  @media (min-width: 700px) {
-    &:hover {
-      transition: 0.2s;
-      background: var(--main-color);
-      color: var(--light-color);
     }
   }
 }

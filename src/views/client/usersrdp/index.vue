@@ -4,7 +4,7 @@
     <navcomponent></navcomponent>
     <div class="page__wrapp">
       <div class="page__body">
-        <h1 class="l">Диск id: {{ this.$store.getters.getClientData.id }}</h1>
+        <h1 class="l">Клиент id: {{ this.$store.getters.getClientData.id }}</h1>
         <div class="nav__client">
           <router-link class="link" to="/client/info">info</router-link>
           <router-link class="link" to="/client/userssql"
@@ -21,12 +21,10 @@
           >
           <router-link class="link" to="/disk">disk</router-link>
         </div>
-        <div class="text__wrapp">
-          <p>text</p>
-        </div>
         <div class="button__container">
-          <button class="button">Расширить диск</button>
-          <button class="button">Урезать диск</button>
+          <button class="button">Список активных пользователей</button>
+          <button class="button">Добавить пользователя</button>
+          <button class="button">Урезать пользователя</button>
         </div>
       </div>
     </div>
@@ -72,14 +70,6 @@ export default {
       &.router-link-exact-active {
         color: var(--second-color);
       }
-    }
-  }
-  .text__wrapp {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 48px;
-    > * {
-      padding: 12px;
     }
   }
 }

@@ -60,7 +60,7 @@ export default {
 <style lang="scss">
 @font-face {
   font-family: "Mont";
-  src: url("/fonts/Mont-Regular.ttf");
+  src: url("https://tequila1boy.github.io/controlPanel/fonts/Mont-Regular.ttf");
 }
 :root {
   --main-color: #4079fa;

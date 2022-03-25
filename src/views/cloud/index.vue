@@ -4,7 +4,9 @@
     <navcomponent></navcomponent>
     <div class="page__wrapp">
       <div class="page__body">
-        <h1 class="l">Облако</h1>
+        <h1 class="l">
+          Облако - <a class="link" href="#">ссылка на сервис</a>
+        </h1>
       </div>
     </div>
   </div>

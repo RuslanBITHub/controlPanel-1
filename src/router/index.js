@@ -13,9 +13,39 @@ const routes = [
     component: () => import('../views/auth/index.vue')
   },
   {
-    path: '/client',
-    name: 'Client',
-    component: () => import('../views/client/index.vue')
+    path: '/client/info',
+    name: 'Client info',
+    component: () => import('../views/client/info/index.vue')
+  },
+  {
+    path: '/client/web',
+    name: 'Client web',
+    component: () => import('../views/client/web/index.vue')
+  },
+  {
+    path: '/client/userssql',
+    name: 'Client users sql',
+    component: () => import('../views/client/userssql/index.vue')
+  },
+  {
+    path: '/client/usersrdp',
+    name: 'Client users rdp',
+    component: () => import('../views/client/usersrdp/index.vue')
+  },
+  {
+    path: '/client/base',
+    name: 'Client base',
+    component: () => import('../views/client/base/index.vue')
+  },
+  {
+    path: '/client/update',
+    name: 'Client update',
+    component: () => import('../views/client/update/index.vue')
+  },
+  {
+    path: '/client/interaction',
+    name: 'Client interaction',
+    component: () => import('../views/client/interaction/index.vue')
   },
   {
     path: '/scripts',
@@ -36,11 +66,6 @@ const routes = [
     path: '/settings',
     name: 'Settings',
     component: () => import('../views/settings/index.vue')
-  },
-  {
-    path: '/data',
-    name: 'Data',
-    component: () => import('../views/data/index.vue')
   },
   {
     path: '/cloud',

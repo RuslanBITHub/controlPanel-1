@@ -10,7 +10,10 @@
         />
       </svg>
     </router-link>
-    <router-link to="/client" v-if="this.$store.getters.getUserData.level >= 0">
+    <router-link
+      to="/client/info"
+      v-if="this.$store.getters.getUserData.level >= 0"
+    >
       <svg
         viewBox="0 0 50 50"
         fill="none"
@@ -135,7 +138,10 @@
         />
       </svg>
     </router-link>
-    <router-link to="/data" v-if="this.$store.getters.getUserData.level >= 0">
+    <router-link
+      to="/client/interaction"
+      v-if="this.$store.getters.getUserData.level >= 0"
+    >
       <svg
         viewBox="0 0 50 50"
         fill="none"
