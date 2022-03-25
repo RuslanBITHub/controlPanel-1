@@ -43,6 +43,7 @@ export default {
             this.$store.dispatch("SET_USERDATA", {
               name: "name",
               avatar: undefined,
+              level: 4,
             });
           });
       }

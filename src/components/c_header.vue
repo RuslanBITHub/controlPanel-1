@@ -1,6 +1,6 @@
 <template>
   <header class="header padding">
-    <img class="logo" src="/img/logo.png" alt="" />
+    <img class="logo" src="<%= BASE_URL %>/img/logo.png" alt="" />
     <form class="search" @submit.prevent="this.search">
       <input class="input" type="text" placeholder="client id / инн" />
       <svg
@@ -29,8 +29,11 @@
       <div class="account__wrapp">
         <img
           class="avatar"
-          v-if="this.$store.getters.getUserData.avatar == undefined"
-          src="/img/person.svg"
+          v-if="
+            this.$store.getters.getUserData.avatar == undefined ||
+            this.$store.getters.getUserData.avatar.length == 0
+          "
+          src="<%= BASE_URL %>/img/person.svg"
           alt=""
         />
         <img

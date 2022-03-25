@@ -2,7 +2,7 @@
   <div class="page">
     <section class="section">
       <div class="side">
-        <img class="logo" src="/img/logo.png" alt="" />
+        <img class="logo" src="<%= BASE_URL %>/img/logo.png" alt="" />
         <form class="form" @submit.prevent="this.send">
           <h1 class="l">вход</h1>
           <inputtext ref="login" text="логин"></inputtext>
@@ -11,7 +11,7 @@
         </form>
       </div>
       <div class="side side-bg">
-        <img class="image" src="/img/clouds.jpg" alt="" />
+        <img class="image" src="<%= BASE_URL %>/img/clouds.jpg" alt="" />
       </div>
       <div class="popup" v-if="error.length > 0" @click.self="error = []">
         <div class="popup__wrapp">

@@ -17,7 +17,11 @@ export default {
   data() {
     return {};
   },
-  mounted() {},
+  mounted() {
+    if(this.$store.getUserData.level != 4){
+      this.$router.push("/")
+    }
+  },
   methods: {},
 };
 </script>

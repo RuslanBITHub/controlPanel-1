@@ -7,7 +7,11 @@ export default createStore({
     // clientid это строка id клиента из поиска в панели, нужна для того чтобы сайт показывал данные одного пользователя на разных страницах
     clientid: '',
     // userData это объект данных авторизированного пользователя
-    userData: {}
+    userData: {
+      name: '',
+      avatar: '',
+      level: 0
+    }
   },
   getters: {
     getToken(state) {
