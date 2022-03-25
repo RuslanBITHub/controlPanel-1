@@ -47,8 +47,15 @@ export default {
       getCookieByName("token") == undefined
         ? undefined
         : getCookieByName("token");
-    if (token != undefined || token != "") {
+    if (
+      token == undefined ||
+      token == "" ||
+      token == 0 ||
+      token == "undefined"
+    ) {
+    } else {
       this.$router.push("/");
+      console.log(token);
     }
   },
   methods: {

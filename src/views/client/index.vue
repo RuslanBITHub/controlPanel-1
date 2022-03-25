@@ -4,7 +4,7 @@
     <navcomponent></navcomponent>
     <div class="page__wrapp">
       <div class="page__body">
-        <h1 class="l">Клиент</h1>
+        <h1 class="l">Клиент id: {{ this.$store.getters.getClientData.id }}</h1>
       </div>
     </div>
   </div>

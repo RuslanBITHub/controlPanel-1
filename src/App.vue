@@ -31,7 +31,12 @@ export default {
         getCookieByName("token") == undefined
           ? undefined
           : getCookieByName("token");
-      if (token == undefined || token == "") {
+      if (
+        token == undefined ||
+        token == "" ||
+        token == 0 ||
+        token == "undefined"
+      ) {
         this.$router.push("/auth/");
       } else {
         this.axios
