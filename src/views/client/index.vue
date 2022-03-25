@@ -18,8 +18,9 @@ export default {
     return {};
   },
   mounted() {
-    if(this.$store.getUserData.level != 4){
-      this.$router.push("/")
+    if (this.$store.getters.getUserData.level < 0) {
+      //тут нужно указать минимальный уровень доступа
+      this.$router.push("/");
     }
   },
   methods: {},

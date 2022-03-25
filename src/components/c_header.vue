@@ -1,6 +1,6 @@
 <template>
   <header class="header padding">
-    <img class="logo" src="<%= BASE_URL %>/img/logo.png" alt="" />
+    <img class="logo" src="controlPanel/img/logo.png" alt="" />
     <form class="search" @submit.prevent="this.search">
       <input class="input" type="text" placeholder="client id / инн" />
       <svg
@@ -33,7 +33,7 @@
             this.$store.getters.getUserData.avatar == undefined ||
             this.$store.getters.getUserData.avatar.length == 0
           "
-          src="<%= BASE_URL %>/img/person.svg"
+          src="/controlPanel/img/person.svg"
           alt=""
         />
         <img

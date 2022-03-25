@@ -10,7 +10,7 @@
         />
       </svg>
     </router-link>
-    <router-link to="/client">
+    <router-link to="/client" v-if="this.$store.getters.getUserData.level >= 0">
       <svg
         viewBox="0 0 50 50"
         fill="none"
@@ -22,7 +22,10 @@
         />
       </svg>
     </router-link>
-    <router-link to="/scripts">
+    <router-link
+      to="/scripts"
+      v-if="this.$store.getters.getUserData.level >= 0"
+    >
       <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M28.125 6.25H25H13.4167C11.7598 6.25 10.4167 7.59315 10.4167 9.25V40.75C10.4167 42.4069 11.7598 43.75 13.4167 43.75H36.5834C38.2402 43.75 39.5834 42.4069 39.5834 40.75V22.526V17.9687M28.125 6.25L39.5834 17.9687M28.125 6.25V16.9687C28.125 17.521 28.5727 17.9687 29.125 17.9687H39.5834"
@@ -44,7 +47,10 @@
         />
       </svg>
     </router-link>
-    <router-link to="/settings">
+    <router-link
+      to="/settings"
+      v-if="this.$store.getters.getUserData.level >= 0"
+    >
       <svg
         viewBox="0 0 50 50"
         fill="none"
@@ -64,7 +70,7 @@
         />
       </svg>
     </router-link>
-    <router-link to="/cloud">
+    <router-link to="/cloud" v-if="this.$store.getters.getUserData.level >= 0">
       <svg
         viewBox="0 0 50 50"
         fill="none"
@@ -79,7 +85,10 @@
         />
       </svg>
     </router-link>
-    <router-link to="/notification">
+    <router-link
+      to="/notification"
+      v-if="this.$store.getters.getUserData.level >= 0"
+    >
       <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M8.33331 14.5834L23.2 25.7333C24.2666 26.5333 25.7333 26.5333 26.8 25.7333L41.6666 14.5833"
@@ -98,7 +107,7 @@
         />
       </svg>
     </router-link>
-    <router-link to="/disk">
+    <router-link to="/disk" v-if="this.$store.getters.getUserData.level >= 0">
       <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M9.89581 11.9792C9.89581 10.8286 10.8286 9.89587 11.9791 9.89587H38.0208C39.1714 9.89587 40.1041 10.8286 40.1041 11.9792V19.2709C40.1041 20.4215 39.1714 21.3542 38.0208 21.3542H11.9791C10.8285 21.3542 9.89581 20.4215 9.89581 19.2709V11.9792Z"
@@ -126,7 +135,7 @@
         />
       </svg>
     </router-link>
-    <router-link to="/data">
+    <router-link to="/data" v-if="this.$store.getters.getUserData.level >= 0">
       <svg
         viewBox="0 0 50 50"
         fill="none"

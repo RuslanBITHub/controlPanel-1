@@ -17,7 +17,12 @@ export default {
   data() {
     return {};
   },
-  mounted() {},
+  mounted() {
+    if (this.$store.getters.getUserData.level < 0) {
+      //тут нужно указать минимальный уровень доступа
+      this.$router.push("/");
+    }
+  },
   methods: {},
 };
 </script>
