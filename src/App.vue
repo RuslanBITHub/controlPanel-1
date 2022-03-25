@@ -6,6 +6,50 @@
     </main>
   </div>
 </template>
+<script>
+export default {
+  mounted() {
+    this.getCookie();
+    setInterval(() => {
+      // каждые 30 секунд сайт проверяет есть ли у пользователя куки, зачем нужно? чтобы автоматически выходило из аккаунта спустя вермя жизни куки
+      this.getCookie();
+    }, 30000);
+  },
+  methods: {
+    getCookie() {
+      let getCookieByName = (name) => {
+        let matches = document.cookie.match(
+          new RegExp(
+            "(?:^|; )" +
+              name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") +
+              "=([^;]*)"
+          )
+        );
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+      };
+      let token =
+        getCookieByName("token") == undefined
+          ? undefined
+          : getCookieByName("token");
+      if (token == undefined || token == "") {
+        this.$router.push("/auth/");
+      } else {
+        this.axios
+          .get("https://jsonplaceholder.typicode.com/todos/1")
+          .then((response) => {
+            console.log(response);
+            //тут вы пишите логику авторизации и проверки токена
+            this.$store.dispatch("SET_TOKEN", "token");
+            this.$store.dispatch("SET_USERDATA", {
+              name: "name",
+              avatar: undefined,
+            });
+          });
+      }
+    },
+  },
+};
+</script>
 
 <style lang="scss">
 @font-face {
@@ -213,7 +257,7 @@ body {
     padding: 0 144px 0 144px;
   }
   @media (max-width: 700px) {
-    padding: 0 24px 0 24px;
+    padding: 0 72px 0 72px;
   }
 }
 .button {

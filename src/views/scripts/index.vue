@@ -4,7 +4,7 @@
     <navcomponent></navcomponent>
     <div class="page__wrapp">
       <div class="page__body">
-        <h1 class="l">Главная</h1>
+        <h1 class="l">Скрипты</h1>
       </div>
     </div>
   </div>
